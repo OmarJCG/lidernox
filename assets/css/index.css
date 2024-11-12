@@ -493,11 +493,19 @@ img {
 /* ====================== FOOTER ======================= */
 /* ==================================================== */
 .footer{
-    background-color: var(--first-color-alt);
     color: var(--body-color);
+}
+
+.footer-one{
     display: grid;
     justify-content: center;
+    background-color: var(--first-color);
 }
+
+.footer-two{
+    background-color: #141523;
+}
+
 .footer__container{
     display: grid;
     gap: 1.5rem;
@@ -511,11 +519,16 @@ img {
     color: var(--body-color);
     font-size: 1.2rem;
     margin-bottom: .5rem;
+    font-weight: 700;
 }
 
 .footer__contacto,
 .footer__social{
     gap: 1rem
+}
+
+.footer__contact{
+    text-align: center;
 }
 
 .footer__contacto a:hover {
