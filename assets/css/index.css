@@ -17,6 +17,7 @@
         -> Click on tab (Color Conversion)
         -> Copy the color mode (HSL)
     */
+    --p: #6e6a7c;
     --hue: 255;
     --first-color: hsl(var(--hue), 90%, 60%);
     --first-color-alt: hsl(var(--hue), 82%, 56%);
@@ -175,7 +176,8 @@ img {
 }
 
 .linea-completa{
-    width: max-content;
+    text-align: center;
+    max-width: max-content;
     border-bottom: 4px solid var(--first-color);
     padding-bottom: .5rem;
     margin-bottom: 1rem;
@@ -188,7 +190,7 @@ img {
     background-color: var(--first-color);
     color: var(--white-color);
     font-weight: var(--font-semi-bold);
-    padding: 1rem 3.5rem;
+    padding: 1rem 5rem;
     transition: background-color .4s, box-shadow .4s;
     cursor: pointer;
     text-align: center;
@@ -387,3 +389,171 @@ img {
     border-radius: 10px;
 }
 
+
+/* ==================================================== */
+/* ====================== PERSONAL ======================= */
+/* ==================================================== */
+.personal{
+    background-color:#141523 ;
+    color: #c2b8e0;
+}
+
+.personal__container{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.personal__title{
+    color: #c2b8e0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.personal__title::before{
+    background-color: var(--first-color);
+    width: 250px;
+}
+
+.personal__text{
+    text-align: justify;
+}
+
+.personal__figura{
+    text-align: center;
+}
+
+.personal__img{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.personal__contact{
+    text-align: center;
+}
+
+
+/* ==================================================== */
+/* ====================== RESULTADO ======================= */
+/* ==================================================== */
+.resultado__title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.resulatado__container{
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+
+}
+
+.resulatado__item{
+    text-align: center;
+    box-shadow: 0 0 5px 0px rgb(0,0,0,.5) ;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.resulatado__p{
+    border: 3px solid var(--first-color);
+    width: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2.9rem;
+    color: var(--first-color);
+    font-weight: 600;
+    margin: auto;
+}
+
+.resulatado__number,
+.resulatado__text{
+    font-weight: 800;
+}
+
+.resulatado__number{
+    font-size: 1.5rem;
+    margin-block: .5rem;
+    color: var(--first-color);
+}
+
+.resultado__contact{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+/* ==================================================== */
+/* ====================== FOOTER ======================= */
+/* ==================================================== */
+.footer{
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
+    display: grid;
+    justify-content: center;
+}
+.footer__container{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.footer__img{
+    border-radius: 1rem;
+}
+
+.footer__title{
+    color: var(--body-color);
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.footer__contacto,
+.footer__social{
+    gap: 1rem
+}
+
+.footer__contacto a:hover {
+    color: #141523;
+}
+
+.footer__contacto i{
+    padding-right: .5rem;
+}
+
+.footer__social{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer__button{
+    background-color: var(--body-color);
+    color: var(--first-color-alt);
+    font-weight: 800;
+}
+
+.footer__social i:hover{
+    color:#c2b8e0;
+}
+
+.footer__button:hover{
+    background-color: #c2b8e0;
+}
+
+.footer__copy{
+    background-color: #141523;
+    color: #c2b8e0;
+    padding-block: 1rem;
+}
+
+.footer__copy p{
+    text-align: center;
+    font-weight: 600;
+}
