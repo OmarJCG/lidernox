@@ -1,0 +1,174 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    /* 
+        Change favorite color
+        Default: hsl(255, 90%, 60%)
+        Orange: hsl(14, 90%, 60%) - Blue: hsl(210, 90%, 50%)
+        Pink: hsl(356, 100%, 65%) - Green: hsl(162, 90%, 40%)
+  
+        For more colors visit: https://colors.dopely.top/color-pedia
+        -> Choose any color 
+        -> Click on tab (Color Conversion)
+        -> Copy the color mode (HSL)
+    */
+    --p: hsl(255, 90%, 60%);
+    --hue: 255;
+    --first-color: hsl(var(--hue), 90%, 60%);
+    --first-color-alt: hsl(var(--hue), 82%, 56%);
+    --first-color-light: hsl(var(--hue), 40%, 80%);
+    --title-color: hsl(var(--hue), 24%, 16%);
+    --text-color: hsl(var(--hue), 8%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 60%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(0, 0%, 100%);
+    --shadow-color: hsla(var(--hue), 90%, 30%, .1);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+/* ================================================ */
+/* ===================== MAIN ====================== */
+/* ================================================ */
+
+/* ================================================ */
+/* ===================== tienda ====================== */
+/* ================================================ */
+
+.tienda__title{
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+/* ================================ NAV */
+
+.tienda__nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+    
+}
+
+.tienda__categoria{
+    background-color: var(--first-color);
+    padding: .5rem;
+    color: var(--body-color);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    cursor: pointer;
+}
+
+.tienda__categoria i{
+    font-size: 1.2rem;
+}
+.tienda__nav-h3{
+    font-size: 1rem;
+}
+
+.tienda__lists{
+    position: fixed;
+    background-color: rgb(0, 0, 0, .5);
+    top: var(--header-height);
+    left: 0;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tienda__list{
+    width: 90%;
+    background-color: var(--body-color);
+    padding-block: 4rem;
+    border-radius: 1rem;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tienda__cat{
+    cursor: pointer;
+}
+
+.tienda__close{
+    position: absolute;
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
+    top:2.5rem;
+    right: 2rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.show-menu-tienda{
+    display: flex;
+} 
+
+/* ========================================= tienda card */
+.tienda__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+
+}
+
+.tienda__card {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 0px rgb(0, 0, 0, .5);
+}
+
+
+.tienda__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tienda__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.tienda__texto {
+    font-weight: 700;
+}
+
+.tienda__button {
+    padding: .8rem 2rem;
+    border-radius: 10px;
+}

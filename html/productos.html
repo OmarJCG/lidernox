@@ -1,23 +1,30 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/logo/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/css/producto.css">
 
     <title>LÍDERNOX PERU</title>
+
+    <style>
+        .morado{
+            color:hsl(255, 90%, 60%);
+        }
+    </style>
 </head>
 <body>
-
     <!--==================== HEADER ====================-->
-    <header class="header header-pages" id="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="" class="nav__logo">
                 LÍDERNOX PERU
@@ -31,17 +38,17 @@
                         <a href="../index.html" class="nav__link">Inicio</a>
                     </li>
                     <li class="nav__item">
-                        <i class="ri-briefcase-line"></i>
-                        <a href="productos.html" class="nav__link">Productos</a>
+                        <i class="ri-briefcase-line morado"></i>
+                        <a href="../html/productos.html" class="nav__link morado">Productos</a>
                     </li>
                     <li class="nav__item">
                         <i class="ri-team-line"></i>
-                        <a href="nosotros.html" class="nav__link">Nosotros</a>
+                        <a href="../html/nosotros.html" class="nav__link">Nosotros</a>
                     </li>
                     <li class="nav__item">
-                        <div class="button">
+                        <div class="button nav__button">
                             <i class="ri-customer-service-2-fill"></i>
-                            <a href="contacto.html">Contacto</a>
+                            <a href="../html/contacto.html">Contacto</a>
                         </div>
                     </li>
                 </ul>
@@ -60,6 +67,214 @@
         </nav>
     </header>
 
+    <!--==================== MAIN ====================-->
+    <main class="main container">
+        <section class="section tienda">
+
+            <h1 class="tienda__title linea-completa">Productos</h1>
+
+            <div class="tienda__hero">
+                <div class="tienda__nav">
+                    <div class="tienda__categoria" id="tienda-categoria">
+                        <i class="ri-menu-line"></i>
+                        Categorias
+                    </div>
+                    <div>
+                        <h3 class="tienda__nav-h3" id="tienda-h3">Todos los productos</h3>
+                    </div>
+                </div>
+
+                <div class="tienda__lists" id="tienda-lists">
+                    <ul class="tienda__list">
+                        <li class="tienda__cat" id="tienda-all">
+                            <b>Todos los productos</b>
+                        </li>
+
+                        <li class="tienda__cat" id="balcon">
+                            <b>Balcones modernos</b>
+                        </li>
+                        <li class="tienda__cat" id="escalera">
+                            <b>Barandas para escaleras</b>
+                        </li>
+                        <li class="tienda__cat" id="baranda">
+                            <b>Barandas modernas</b>
+                        </li>
+                        <li class="tienda__cat" id="protector">
+                            <b>Protectores modernos</b>
+                        </li>
+                        <li class="tienda__cat" id="accesorio">
+                            <b>Accesorios inoxidables</b>
+                        </li>
+                    </ul>
+
+                    <div class="tienda__close" id="tienda-close">
+                        <i class="ri-close-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tienda__cards">
+                <div class="tienda__card" id="balcon">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">Balcon</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="tienda__card" id="balcon">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">Balcon</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="tienda__card" id="escalera">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">escalera</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="tienda__card" id="escalera">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">escalera</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="tienda__card" id="baranda">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">baranda</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="tienda__card" id="escalera">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">escalera</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="tienda__card" id="protector">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">protector</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+
+                <div class="tienda__card" id="accesorio">
+                    <a href="#" class="tienda__figure">
+                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                    </a>
+                    
+
+                    <div class="tienda__content">
+                        <p class="tienda__texto">accesorio</p>
+                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer-one">
+            <section class="container section footer__container">
+    
+                <div class="footer__figure">
+                    <a href="https://maps.app.goo.gl/6qVoXRTK4iAnjsoD9">
+                        <img  loading="lazy" src="../assets/img/home/f-mapa.png" class="footer__img" alt="">
+                    </a>
+                    
+                </div>
+    
+                <div class="footer__item">
+                    <h3 class="footer__title">Contacto</h3>
+                    <div class="footer__contacto grid">
+                        <p><i class="ri-phone-fill"></i> 123456789</p>
+                        <p><i class="ri-whatsapp-fill"></i> 123456789</p>
+                        <p><i class="ri-mail-fill"></i>empresa@gmail.com</p>
+                        <a href="https://maps.app.goo.gl/6qVoXRTK4iAnjsoD9" target="_blank"><i class="ri-map-pin-fill"></i>Av. Unión #1125 La Victoria - Chiclayo</a>
+                    </div>
+                </div>
+    
+                <div class="footer__item">
+                    <h3 class="footer__title">Siguenos</h3>
+                    <div class="footer__social grid">
+                        <i class="ri-youtube-fill"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-tiktok-fill"></i>
+                        <i class="ri-facebook-fill"></i>
+                    </div>
+    
+                    <div class="footer__contact">
+                        <a href="" class="button footer__button"><i class="ri-whatsapp-line"></i>Hablemos</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-two">
+            <div class="footer__copy">
+                <div class="container">
+                    <p>LÍDERNOX PERU &copy; 2024. Todos los derechos reservados.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--==================== BOT ====================-->
+    <a href="#" class="bot">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
     <script src="../assets/js/show-menu.js"></script>
+    <script src="../assets/js/menu-tienda.js"></script>
+    <script src="../assets/js/shw-producto.js"></script>
+    <script src="../assets/js/scroll.js"></script>
 </body>
 </html>
