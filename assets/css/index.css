@@ -17,7 +17,7 @@
         -> Click on tab (Color Conversion)
         -> Copy the color mode (HSL)
     */
-    --p: #6e6a7c;
+    --p: hsl(255, 90%, 60%);
     --hue: 255;
     --first-color: hsl(var(--hue), 90%, 60%);
     --first-color-alt: hsl(var(--hue), 82%, 56%);
@@ -313,6 +313,8 @@ img {
 .home {
     padding-block: 4rem 1rem;
     gap: 1rem;
+    max-width: 1200px;
+    margin-inline: 0;
 }
 
 .home__title {
@@ -603,7 +605,7 @@ img {
     right: 1rem;
     bottom: -50%;
     background-color: var(--container-color);
-    box-shadow: 0 12px 24px var(--shadow-color);
+    box-shadow: 0 12px 24px var(--first-color-light);
     display: inline-flex;
     padding: 6px;
     font-size: 1.25rem;
@@ -618,6 +620,20 @@ img {
 
 .show-scroll{
     bottom: 3rem;
+}
+
+.bot{
+    position: fixed;
+    left: 1rem;
+    bottom: 3rem;
+    background-color: #25d366;
+    box-shadow: 0px 0px 5px 1px #61f397;
+    display: inline-flex;
+    padding: 8px;
+    font-size: 1.25rem;
+    color: var(--body-color);
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s, background-color .4s;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -773,7 +789,12 @@ img {
     }
 
     .home{
-        padding-block-start: 5rem;
+        gap: 0;
+        max-width: 1300px;
+    }
+
+    .home__figure{
+        width: 100%;
     }
 
     .home__content{
@@ -846,10 +867,30 @@ img {
         margin-block: 3rem;
     }
 
+    .scrollup {
+        right: 3rem;
+
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+
+    .bot{
+        padding: .9rem;
+        font-size: 2rem;
+        border-radius: 10px;
+    }
+
+    
+
     
 }
 
 @media screen and (min-width: 1200px){
+
+    .home{
+        /* max-width: 100px; */
+    }
+
     .container{
         margin: auto;
     }

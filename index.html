@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="assets/css/index.css">
 
     <title>LÍDERNOX PERU</title>
+
+    <style>
+        .morado{
+            color:hsl(255, 90%, 60%);
+        }
+    </style>
 </head>
 <body>
 
@@ -28,8 +34,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <i class="ri-home-4-line"></i>
-                        <a href="#" class="nav__link">Inicio</a>
+                        <i class="ri-home-4-line morado"></i>
+                        <a href="#" class="nav__link morado">Inicio</a>
                     </li>
                     <li class="nav__item">
                         <i class="ri-briefcase-line"></i>
@@ -64,7 +70,7 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section grid">
+        <section class="home section grid container">
             <div class="home__figure">
                 <img loading="lazy" src="assets/img/home/hero-3.png" alt="" class="home__img">
             </div>
@@ -133,6 +139,17 @@
                         <a href="#" class="button producto__button"><i class="ri-layout-grid-line"></i>Ver catálogo</a>
                     </div>
                 </div>
+                
+                <div class="producto__card">
+                    <a href="#" class="producto__figure">
+                        <img loading="lazy" src="assets/img/home/p-acesorios.jpg" alt="" class="producto__img">
+                    </a>
+
+                    <div class="producto__content">
+                        <p class="producto__texto">Accesorios inoxidables</p>
+                        <a href="#" class="button producto__button"><i class="ri-layout-grid-line"></i>Ver catálogo</a>
+                    </div>
+                </div>
             </div>
             
         </section>
@@ -142,7 +159,7 @@
             <div class="container personal__container">
                 <div class="personal__content">
                     <h2 class="personal__title linea-before">Trabajos personalizados en aceros inoxidables</h2>
-                    <p class="personal__text">Ofrecemos una amplia gama de trabajos, como sillas, bancos, mesas, bandejas, letras, números y mucho más. Nos destacamos por combinar calidad, eficiencia y un diseño moderno en cada producto</p>
+                    <p class="personal__text">Ofrecemos una amplia gama de trabajos, como sillas, bancos, mesas, bandejas, letras, números, muebles decorados en todo tipo y mucho más. Manteniendo la calidad, eficiencia en cada producto</p>
                     
                 </div>
 
@@ -251,6 +268,11 @@
     <!--==================== SCROLL UP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--==================== BOT ====================-->
+    <a href="#" class="bot">
+        <i class="ri-whatsapp-line"></i>
     </a>
 
     <script src="assets/js/show-menu.js"></script>
