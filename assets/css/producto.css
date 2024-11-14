@@ -1,54 +1,5 @@
 /*=============== VARIABLES CSS ===============*/
-:root {
-    --header-height: 3.5rem;
 
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    /* 
-        Change favorite color
-        Default: hsl(255, 90%, 60%)
-        Orange: hsl(14, 90%, 60%) - Blue: hsl(210, 90%, 50%)
-        Pink: hsl(356, 100%, 65%) - Green: hsl(162, 90%, 40%)
-  
-        For more colors visit: https://colors.dopely.top/color-pedia
-        -> Choose any color 
-        -> Click on tab (Color Conversion)
-        -> Copy the color mode (HSL)
-    */
-    --p: #6e6a7c;
-    --hue: 255;
-    --first-color: hsl(var(--hue), 90%, 60%);
-    --first-color-alt: hsl(var(--hue), 82%, 56%);
-    --first-color-light: hsl(var(--hue), 40%, 80%);
-    --title-color: hsl(var(--hue), 24%, 16%);
-    --text-color: hsl(var(--hue), 8%, 45%);
-    --text-color-light: hsl(var(--hue), 8%, 60%);
-    --white-color: hsl(0, 0%, 100%);
-    --body-color: hsl(0, 0%, 100%);
-    --container-color: hsl(0, 0%, 100%);
-    --shadow-color: hsla(var(--hue), 90%, 30%, .1);
-
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Poppins", sans-serif;
-    --biggest-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-
-    /*========== Font weight ==========*/
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semi-bold: 600;
-
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 1000;
-}
 
 
 /* ================================================ */
@@ -103,11 +54,15 @@
         background-color: rgb(0, 0, 0, .5);
         top: var(--header-height);
         left: 0;
-        height: 100vh;
+        height: calc(100vh - 3.5rem) ;
         display: none;
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+    .tienda__lists-h3{
+        display: none;
     }
     
     .tienda__list{
