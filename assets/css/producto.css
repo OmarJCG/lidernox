@@ -15,7 +15,7 @@
         -> Click on tab (Color Conversion)
         -> Copy the color mode (HSL)
     */
-    --p: hsl(255, 90%, 60%);
+    --p: #6e6a7c;
     --hue: 255;
     --first-color: hsl(var(--hue), 90%, 60%);
     --first-color-alt: hsl(var(--hue), 82%, 56%);
@@ -106,6 +106,7 @@
 
 .tienda__list{
     width: 90%;
+    max-width: 400px;
     background-color: var(--body-color);
     padding-block: 4rem;
     border-radius: 1rem;
@@ -116,6 +117,17 @@
 
 .tienda__cat{
     cursor: pointer;
+    display: flex;
+    gap: .8rem;
+}
+
+.tienda__cat i{
+    font-size: 1.25rem;
+}
+
+.tienda__cat img{
+    display: inline-block;
+    width: 1.25rem;
 }
 
 .tienda__close{
