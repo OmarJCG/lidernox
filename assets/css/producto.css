@@ -66,6 +66,9 @@
 
 /* ================================ NAV */
 
+.main{
+    margin-inline: .5rem;
+}
 
 
 @media screen and (max-width: 1150px) {
@@ -206,4 +209,88 @@
 .tienda__button {
     padding: .8rem 1.5rem;
     border-radius: 10px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For large devices */
+@media screen and (min-width: 1150px){
+    .main{
+        width: 98%;
+        margin-inline: auto;
+        max-width: 1400px;
+    }
+
+    .tienda__nav{
+        display: none;
+    }
+
+    .tienda__content-grid{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.5rem;
+    }
+
+    .tienda__lists-h3{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .tienda__list{
+        width: 100%;
+        max-width: 400px;
+        border-radius: 1rem;
+        display: grid;
+        justify-content: center;
+        gap: 1.5rem;
+        font-size: .89rem;
+    }
+
+    .tienda__cat{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: .8rem;
+        
+    }
+
+    .tienda__right{
+        justify-self: flex-end;
+        transition: .3s transform;
+    }
+
+    .tienda__cat:hover{
+        color: var(--first-color);
+    }
+
+    .tienda__cat:hover .tienda__right{
+        transform: translateX(.25rem);
+    }
+
+    .tienda__cat i{
+        font-size: 1.25rem;
+    }
+
+    
+    .tienda__cat img{
+        display: inline-block;
+        width: 1.25rem;
+    }
+
+    .tienda__close{
+        display: none;
+    }
+
+    .tienda__cards{
+        padding-top: 1rem;
+    }
+
+    .tienda-morada{
+        color:var(--first-color-alt);
+        font-weight: 600;
+    }
 }

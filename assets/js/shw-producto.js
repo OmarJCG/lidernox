@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
             tiendaLists.classList.remove('show-menu-tienda');
             document.body.style.overflow = 'auto';
 
+            categoryItems.forEach(item => {
+                item.classList.remove("tienda-morada")
+            })
+
+            
+
             const category = item.id; // Obtener el id de la categoría seleccionada
 
             // Cambiar el texto del h3 al nombre de la categoría seleccionada
@@ -22,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     card.style.display = "block"; // Mostrar tarjeta si pertenece a la categoría
                 }
                 else if(category == "tienda-all"){
-                    console.log("hlhg")
                     card.style.display = "block";
                 }
                 
@@ -30,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     card.style.display = "none"; // Ocultar tarjeta si no pertenece a la categoría
                 }
             });
+
+            item.classList.add("tienda-morada")
         });
     });
 

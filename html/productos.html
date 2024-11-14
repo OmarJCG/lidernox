@@ -73,191 +73,404 @@
 
             <h1 class="tienda__title linea-completa">Productos</h1>
 
-            <div class="tienda__hero">
-                <div class="tienda__nav">
-                    <div class="tienda__categoria" id="tienda-categoria">
-                        <i class="ri-menu-line"></i>
-                        Categorias
+            <div class="tienda__content-grid">
+                <div class="tienda__hero">
+                    <div class="tienda__nav">
+                        <div class="tienda__categoria" id="tienda-categoria">
+                            <i class="ri-menu-line"></i>
+                            Categorias
+                        </div>
+                        <div>
+                            <h3 class="tienda__nav-h3" id="tienda-h3">Todos los productos</h3>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="tienda__nav-h3" id="tienda-h3">Todos los productos</h3>
+    
+                    <div class="tienda__lists" id="tienda-lists">
+
+                        <h3 class="tienda__lists-h3">Categorias</h3>
+
+                        <ul class="tienda__list">
+                            <li class="tienda__cat tienda-morada" id="tienda-all">
+                                <i class="ri-gallery-view"></i>
+                                <b>Todos los productos</b>
+                                <i class="ri-arrow-right-s-line tienda__right"></i>
+                            </li>
+
+                            <li class="tienda__cat" id="escalera">
+                                <img src="../assets/svg/t-escalera.svg" alt="">
+                                <b>Barandas para escaleras</b>
+                                <i class="ri-arrow-right-s-line tienda__right"></i>
+                            </li>
+    
+                            <li class="tienda__cat" id="balcon">
+                                <img src="../assets/svg/t-balcon.svg" alt="">
+                                <b>Balcones modernos</b>
+                                <i class="ri-arrow-right-s-line tienda__right"></i>
+                            </li>
+                            
+                            <li class="tienda__cat" id="baranda">
+                                <img src="../assets/svg/t-baranda.svg" alt="">
+                                <b>Barandas modernas</b>
+                                <i class="ri-arrow-right-s-line tienda__right"></i>
+                            </li>
+                            <li class="tienda__cat" id="protector">
+                                <i class="ri-grid-line"></i>
+                                <b>Protectores modernos</b>
+                                <i class="ri-arrow-right-s-line tienda__right"></i>
+                            </li>
+                            <li class="tienda__cat" id="accesorio">
+                                <i class="ri-hammer-fill"></i>
+                                <b>Accesorios inoxidables</b>
+                                <i class="ri-arrow-right-s-line tienda__right"></i>
+                            </li>
+                        </ul>
+    
+                        <div class="tienda__close" id="tienda-close">
+                            <i class="ri-close-fill"></i>
+                        </div>
                     </div>
                 </div>
-
-                <div class="tienda__lists" id="tienda-lists">
-                    <ul class="tienda__list">
-                        <li class="tienda__cat" id="tienda-all">
-                            <i class="ri-gallery-view"></i>
-                            <b>Todos los productos</b>
-                            <i class="ri-arrow-right-s-line tienda__right"></i>
-                        </li>
-
-                        <li class="tienda__cat" id="balcon">
-                            <img src="../assets/svg/t-balcon.svg" alt="">
-                            <b>Balcones modernos</b>
-                            <i class="ri-arrow-right-s-line tienda__right"></i>
-                        </li>
-                        <li class="tienda__cat" id="escalera">
-                            <img src="../assets/svg/t-escalera.svg" alt="">
-                            <b>Barandas para escaleras</b>
-                            <i class="ri-arrow-right-s-line tienda__right"></i>
-                        </li>
-                        <li class="tienda__cat" id="baranda">
-                            <img src="../assets/svg/t-baranda.svg" alt="">
-                            <b>Barandas modernas</b>
-                            <i class="ri-arrow-right-s-line tienda__right"></i>
-                        </li>
-                        <li class="tienda__cat" id="protector">
-                            <i class="ri-grid-line"></i>
-                            <b>Protectores modernos</b>
-                            <i class="ri-arrow-right-s-line tienda__right"></i>
-                        </li>
-                        <li class="tienda__cat" id="accesorio">
-                            <i class="ri-hammer-fill"></i>
-                            <b>Accesorios inoxidables</b>
-                            <i class="ri-arrow-right-s-line tienda__right"></i>
-                        </li>
-                    </ul>
-
-                    <div class="tienda__close" id="tienda-close">
-                        <i class="ri-close-fill"></i>
+    
+                <div class="tienda__cards">
+                    <div class="tienda__card" id="balcon">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-balcon-basico.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Balcón básico</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="balcon">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Balcón con vidreo</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="balcon">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-balcon-pines.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Balcón con pines</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="balcon">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-balcon-personalizado.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Balcón personalizado</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Envíame tu diseño</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="escalera">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-escalera-caracol.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Escalera caracol</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="escalera">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-escalera-vidreo.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Escalera con vidreo</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="escalera">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-escalera-moderna.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Escalera básica</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="escalera">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-escaleras-pines.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Escalera con pines</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="escalera">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-escaleras-personalizadas.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Escalera personalizada</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Envíame tu diseño</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="baranda">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-baranda-basica.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Baranda básica</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="baranda">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-baranda-pines.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Baranda con pines</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="baranda">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-baranda-vidreo.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Baranda con vidreo</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="baranda">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-baranda-personalizada.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Baranda personalizada</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Envíame tu diseño</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="protector">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/home/p-protectores.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Protector para ventana</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="protector">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-protector-puerta.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Protector para puerta</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="protector">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-protector-porton.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Protector para porton</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="protector">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-protector-rejas-basico.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Protector rejas basico</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="protector">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-protector-rejas.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Protector rejas</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="protector">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-protector-psonalizada.png" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Protector personalizado</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Envíame tu diseño</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorio-inox.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Decoracion inox</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorio-roscar.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Roscar</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorio-soldar.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Roscar</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorio-sch.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">SCH</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorios-sch-sin-soldadura.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">SCH sin soldadura</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorio-alimentacion.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Alimentacion</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorios-bisagras-pernos.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Bisagra con pernos</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorio-av660.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Embellesedor</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
+                    </div>
+    
+                    <div class="tienda__card" id="accesorio">
+                        <a href="#" class="tienda__figure">
+                            <img loading="lazy" src="../assets/img/producto/t-accesorios-embellesedor-redondo.jpg" alt="" class="tienda__img">
+                        </a>
+                        
+    
+                        <div class="tienda__content">
+                            <p class="tienda__texto">Embellesedor redondo</p>
+                            <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="tienda__cards">
-                <div class="tienda__card" id="balcon">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-balcon-basico.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Balcón básico</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="balcon">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Balcón con vidreo</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="balcon">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-balcon-pines.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Balcón con pines</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="balcon">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-balcon-personalizado.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Balcón personalizado</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Envíame tu diseño</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="escalera">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-escalera-caracol.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Escalera caracol</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="escalera">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-escalera-vidreo.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Escalera con vidreo</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="escalera">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-escalera-moderna.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Escalera basica</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="escalera">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-balcon-pines.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Escalera con pines</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="escalera">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/producto/t-escaleras-personalizadas.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">Escalera personalizado</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Envíame tu diseño</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="protector">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">protector</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-
-                <div class="tienda__card" id="accesorio">
-                    <a href="#" class="tienda__figure">
-                        <img loading="lazy" src="../assets/img/home/p-balcon.jpg" alt="" class="tienda__img">
-                    </a>
-                    
-
-                    <div class="tienda__content">
-                        <p class="tienda__texto">accesorio</p>
-                        <a href="#" class="button tienda__button"><i class="ri-whatsapp-line"></i>Cotizar</a>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 
