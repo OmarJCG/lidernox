@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     categoryItems.forEach(item => {
         item.addEventListener("click", () => {
             tiendaLists.classList.remove('show-menu-tienda');
+            document.body.style.overflow = 'auto';
 
             const category = item.id; // Obtener el id de la categoría seleccionada
 
