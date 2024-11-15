@@ -1,23 +1,36 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/logo/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <!--=============== REMIXICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+        integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/template.css" />
+    <link rel="stylesheet" href="../assets/css/contacto.css" />
 
     <title>LÍDERNOX PERU</title>
+
+    <style>
+        .morado {
+            color: hsl(255, 90%, 60%);
+        }
+    </style>
 </head>
+
 <body>
 
-    <!--==================== HEADER ====================-->
-    <header class="header header-pages" id="header">
+    <!-- =============================  HEADER ================== -->
+    <header class="header" id="header">
+        
         <nav class="nav container">
             <a href="../index.html" class="nav__logo">
                 LÍDERNOX PERU
@@ -27,20 +40,21 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        
-                        <a href="../index.html" class="nav__link morado"> <i class="ri-home-4-line morado nav__item-i"></i> Inicio</a>
+                        <a href="../index.html" class="nav__link">
+                            <i class="ri-home-4-line nav__item-i"></i>Inicio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../html/productos.html" class="nav__link"><i class="ri-briefcase-line nav__item-i"></i>Productos</a>
+                        <a href="../html/productos.html" class="nav__link"><i
+                                class="ri-briefcase-line nav__item-i"></i>Productos</a>
                     </li>
                     <li class="nav__item">
-                        
-                        <a href="../html/nosotros.html" class="nav__link"><i class="ri-team-line nav__item-i"></i> Nosotros</a>
+                        <a href="../html/nosotros.html" class="nav__link morado"><i
+                                class="ri-team-line nav__item-i"></i>Nosotros</a>
                     </li>
                     <li class="nav__item">
                         <div class="button nav__button">
-                            
-                            <a href="../html/contacto.html"><i class="ri-customer-service-2-fill nav__item-i"></i> Contacto</a>
+                            <a href="../html/contacto.html"><i
+                                    class="ri-customer-service-2-fill nav__item-i"></i>Contacto</a>
                         </div>
                     </li>
                 </ul>
@@ -59,6 +73,97 @@
         </nav>
     </header>
 
+    <main class="main">
+        <!-- ================== CONTACTO ============================ -->
+        <section class="contacto section container">
+            <h1 class="contacto__title linea-completa">Contacto</h1>
+
+            <div class="contacto__container">
+                <div class="contacto__card">
+                    <i class="ri-map-pin-2-fill"></i>
+                    <h3>Ubícame</h3>
+                    <p>Av. Unión #1125 La Victoria - Chiclayo</p>
+                </div>
+
+                <div class="contacto__card">
+                    <i class="ri-phone-fill"></i>
+                    <h3>Llámame</h3>
+                    <p>957949681</p>
+                </div>
+
+                <div class="contacto__card">
+                    <i class="ri-whatsapp-fill"></i>
+                    <h3>Escríbeme</h3>
+                    <p>957949681</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mapa container">
+            <a href="#" class="mapa__a"><img src="../assets/img/contacto/c-mapa.png" alt=""></a>
+            
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer-one">
+            <section class="container section footer__container">
+                <div class="footer__figure">
+                    <a href="https://maps.app.goo.gl/6qVoXRTK4iAnjsoD9">
+                        <img loading="lazy" src="../assets/img/home/f-mapa.png" class="footer__img" alt="" />
+                    </a>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__title">Contacto</h3>
+                    <div class="footer__contacto grid">
+                        <p><i class="ri-phone-fill"></i> 123456789</p>
+                        <p><i class="ri-whatsapp-fill"></i> 123456789</p>
+                        <p><i class="ri-mail-fill"></i>empresa@gmail.com</p>
+                        <a href="https://maps.app.goo.gl/6qVoXRTK4iAnjsoD9" target="_blank"><i
+                                class="ri-map-pin-fill"></i>Av. Unión #1125 La Victoria -
+                            Chiclayo</a>
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__title">Siguenos</h3>
+                    <div class="footer__social grid">
+                        <i class="ri-youtube-fill"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-tiktok-fill"></i>
+                        <i class="ri-facebook-fill"></i>
+                    </div>
+
+                    <div class="footer__contact">
+                        <a href="" class="button footer__button"><i class="ri-whatsapp-line"></i>Hablemos</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-two">
+            <div class="footer__copy">
+                <div class="container">
+                    <p>LÍDERNOX PERU &copy; 2024. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--==================== BOT ====================-->
+    <a href="#" class="bot">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
     <script src="../assets/js/show-menu.js"></script>
+    <script src="../assets/js/scroll.js"></script>
 </body>
+
 </html>
