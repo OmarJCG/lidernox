@@ -1,23 +1,30 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/logo/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/css/nosotros.css">
 
     <title>LÍDERNOX PERU</title>
+
+    <style>
+        .morado{
+            color:hsl(255, 90%, 60%);
+        }
+    </style>
 </head>
 <body>
-
     <!--==================== HEADER ====================-->
-    <header class="header header-pages" id="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="" class="nav__logo">
                 LÍDERNOX PERU
@@ -32,16 +39,16 @@
                     </li>
                     <li class="nav__item">
                         <i class="ri-briefcase-line"></i>
-                        <a href="productos.html" class="nav__link">Productos</a>
+                        <a href="../html/productos.html" class="nav__link">Productos</a>
                     </li>
                     <li class="nav__item">
-                        <i class="ri-team-line"></i>
-                        <a href="nosotros.html" class="nav__link">Nosotros</a>
+                        <i class="ri-team-line morado"></i>
+                        <a href="../html/nosotros.html" class="nav__link morado">Nosotros</a>
                     </li>
                     <li class="nav__item">
-                        <div class="button">
+                        <div class="button nav__button">
                             <i class="ri-customer-service-2-fill"></i>
-                            <a href="contacto.html">Contacto</a>
+                            <a href="../html/contacto.html">Contacto</a>
                         </div>
                     </li>
                 </ul>
@@ -60,6 +67,156 @@
         </nav>
     </header>
 
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HERO ====================-->
+        <section class="nosotroshero section">
+            <div class="nosotrosher__content">
+                <h1 class="nosotroshero__title linea-before">CONÓCENOS</h1>
+                <h3 class="nosotroshero__subtitle">Contamos con más de 5 años de experiencia.</h3>
+            </div>
+        </section>
+
+        <section class="somos container section">
+            <div class="somos__container">
+                <div class="somos__figure">
+                    <img src="../assets/img/nosotros/somos-pulir.jpg" class="somos__img" alt="">
+                </div>
+                <div class="somos__content">
+                    <h2 class="somos__title">¿Quiénes somos?</h2>
+                    <p class="somos__text">
+                        En <b class="morado">LIDERNOX PERÚ</b> somos especialistas en el diseño, fabricación e instalación de soluciones en acero inoxidable, respaldados por más de 5 años de experiencia en el mercado. Contamos con un equipo de profesionales altamente capacitados que garantizan la excelencia en cada proyecto, adaptándonos a las necesidades específicas de nuestros clientes para entregar trabajos de la más alta calidad.
+                    </p>
+
+                    <a href="" class="button somos__button"><i class="ri-whatsapp-line"></i>Hablemos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mv section">
+            <div class="mv__container container">
+                <div class="mv__mision">
+                    <h3 class="mv__title">Mision</h3>
+                    <p class="mv__text">En <b class="morado">LIDERNOX PERÚ</b>, nuestra misión es transformar hogares y espacios de trabajo a través de soluciones innovadoras y elegantes en acero inoxidable. Nos comprometemos a ofrecer productos con acabados impecables y de alta calidad, superando las expectativas de nuestros clientes.</p>
+                </div>
+
+                <div class="mv__vision">
+                    <h3 class="mv__title">Vision</h3>
+                    <p class="mv__text">En <b class="morado">LIDERNOX PERÚ</b>, nuestra vision es convertirnos en la empresa líder y referente nacional en ingeniería estructural y diseño de soluciones en acero inoxidable para el hogar y espacios de trabajo. Aspiramos a ser reconocidos por nuestra excelencia en calidad y innovación en diseño.</p>
+
+                </div>
+
+                <div class="mv__action">
+                    <a href="" class="button somos__button"><i class="ri-whatsapp-line"></i>Hablemos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container resultado">
+            <h2 class="resultado__title linea-before">Somos especialistas</h2>
+            <div class="resulatado__container">
+                <div class="resulatado__item">
+                    <p class="resulatado__p">
+                        <i class="ri-briefcase-fill"></i>
+                    </p>
+                    <p class="resulatado__number">+500</p>
+                    <p class="resulatado__text">Proyectos Finalizados</p>
+                </div>
+
+                <div class="resulatado__item">
+                    <p class="resulatado__p">
+                        <i class="ri-thumb-up-line"></i>
+                    </p>
+                    <p class="resulatado__number">100%</p>
+                    <p class="resulatado__text">Calidad y Garantia</p>
+                </div>
+
+                <div class="resulatado__item">
+                    <p class="resulatado__p">
+                        <i class="ri-group-line"></i>
+                    </p>
+                    <p class="resulatado__number">+700</p>
+                    <p class="resulatado__text">Atencion y Consultas</p>
+                </div>
+
+                <div class="resulatado__item">
+                    <p class="resulatado__p">
+                        <i class="ri-emotion-happy-line"></i>
+                    </p>
+                    <p class="resulatado__number">+400</p>
+                    <p class="resulatado__text">Clientes Satisfechos</p>
+                </div>
+            </div>
+
+            <div class="resultado__contact">
+                <a href="" class="button"><i class="ri-whatsapp-line"></i>Hablemos</a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer-one">
+            <section class="container section footer__container">
+    
+                <div class="footer__figure">
+                    <a href="https://maps.app.goo.gl/6qVoXRTK4iAnjsoD9">
+                        <img  loading="lazy" src="../assets/img/home/f-mapa.png" class="footer__img" alt="">
+                    </a>
+                    
+                </div>
+    
+                <div class="footer__item">
+                    <h3 class="footer__title">Contacto</h3>
+                    <div class="footer__contacto grid">
+                        <p><i class="ri-phone-fill"></i> 123456789</p>
+                        <p><i class="ri-whatsapp-fill"></i> 123456789</p>
+                        <p><i class="ri-mail-fill"></i>empresa@gmail.com</p>
+                        <a href="https://maps.app.goo.gl/6qVoXRTK4iAnjsoD9" target="_blank"><i class="ri-map-pin-fill"></i>Av. Unión #1125 La Victoria - Chiclayo</a>
+                    </div>
+                </div>
+    
+                <div class="footer__item">
+                    <h3 class="footer__title">Siguenos</h3>
+                    <div class="footer__social grid">
+                        <i class="ri-youtube-fill"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-tiktok-fill"></i>
+                        <i class="ri-facebook-fill"></i>
+                    </div>
+    
+                    <div class="footer__contact">
+                        <a href="" class="button footer__button"><i class="ri-whatsapp-line"></i>Hablemos</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-two">
+            <div class="footer__copy">
+                <div class="container">
+                    <p>LÍDERNOX PERU &copy; 2024. Todos los derechos reservados.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--==================== BOT ====================-->
+    <a href="#" class="bot">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
     <script src="../assets/js/show-menu.js"></script>
+    <script src="../assets/js/menu-tienda.js"></script>
+    <script src="../assets/js/scroll.js"></script>
 </body>
 </html>
