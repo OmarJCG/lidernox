@@ -22,6 +22,7 @@
 }
 
 
+
 @media screen and (max-width: 1150px) {
     .tienda__nav{
         display: flex;
@@ -80,7 +81,7 @@
         cursor: pointer;
         display: grid;
         grid-template-columns: auto auto 1fr;
-        gap: .8rem;
+        gap: 1rem;
 
     }
     
@@ -168,7 +169,14 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width: 400px){
+    .tienda__cat{
+        align-items: center;
+    }
+    .tienda__cat b{
+        font-size: .8rem;
+    }
+}
 
 /* For large devices */
 @media screen and (min-width: 1150px){
