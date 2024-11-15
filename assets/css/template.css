@@ -280,7 +280,13 @@ img {
 
 .nav__item{
     color: var(--title-color);
+    cursor: pointer;
 }
+
+.nav__item-i{
+    padding-right: .5rem;
+}
+
 
 .nav__item:hover {
     color: var(--first-color);
